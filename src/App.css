@@ -1,38 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#light {
+  background-color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#dark {
+  background-color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.main {
+  height: 100vh;
+}
+.Navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 12vh;
+  padding-top: 1vh;
+}
+.logo {
+  height: 12vh;
+  margin-left: 2vh;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 10vh;
+}
+li {
+  list-style: none;
+  font-size: 3vh;
+  font-weight: 600;
+  cursor: pointer;
+}
+#light li {
+  color: black;
+}
+#dark li {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  margin-right: 2vh;
+}
+.login {
+  font-weight: 800;
+  font-size: 2.2vh;
+  height: 5.5vh;
+  width: 12vh;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 2.5vh;
+  margin-right: 3vh;
+}
+#light .login {
+  background-color: black;
+  color: white;
+}
+#dark .login {
+  background-color: rgb(204, 204, 204);
+  color: black;
+}
+.theme{
+  font-weight: 700;
+}
+#light .theme{
+  color: black;
+}
+#dark .theme{
+  color: white;
+}
+.content-main {
+  margin-top: 6vh;
+  text-align: center;
+}
+.search-section {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.search-bar {
+  width: 70vh;
+  height: 5vh;
+  margin-left: 5vh;
+  border: none;
+  border-radius: 5vh;
+  padding-left: 2vh;
+  font-weight: 700;
+  font-size: medium;
+}
+.submit {
+  background-color: rgb(68, 127, 255);
+  color: white;
+  margin-left: 10vh;
+  height: 6vh;
+  width: 15vh;
+  border: none;
+  border-radius: 3vh;
+  font-weight: 700;
+  font-size: medium;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section {
+  width: 60%;
+  background-color: rgb(185, 185, 185);
+  height: 9vh;
+  align-items: center;
+  border-radius: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.h1 {
+  font-size: 12vh;
+  font-weight: 800;
+}
+#light .h1 {
+  color: black;
+}
+#dark .h1 {
+  color: white;
+}
+.h2 {
+  font-size: 12vh;
+  font-weight: 800;
+  color: white;
+}
+#light .h2 {
+  color:rgb(85, 85, 234) ;
+}
+#dark .h2 {
+  color: rgb(85, 85, 234);
+}
+p {
+  font-size: 2.5vh;
+  margin-top: 8vh;
+}
+#light p {
+  color: black;
+}
+#dark p {
+  color: white;
 }
